@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>RA Nurul Iman | Form Pendaftaran</title>
+</head>
+
+<body>
+    <div class="header pt-5 pb-5">
+        <h1 class="text-center"></h1>
+        <p class="text-center"></p>
+    </div>
+    <form class="container" name="form-pendaftaran">
+        <h1 id="judul" class="text-center">Form Pendaftaran</h1>
+        <div class="form">
+            <p>Persyaratan: <br> *Fotocopy KK <br> *Fotocopy Akte Kelahiran <br> Masing - masing 2 lembar</p>
+            <label class="form-label">Nama*</label>
+            <input type="text" class="form-control mb-3" name="nama" required
+                oninvalid="this.setCustomValidity('Masukkan Nama')" oninput="this.setCustomValidity('')" />
+            <label class="form-label">Tempat Tanggal Lahir*</label>
+            <input type="text" class="form-control mb-3" name="ttl" required
+                oninvalid="this.setCustomValidity('Masukkan Tempat Tanggal Lahir')"
+                oninput="this.setCustomValidity('')" />
+            <label class="form-label">Nama Ayah*</label>
+            <input type="text" class="form-control mb-3" name="ayah" required
+                oninvalid="this.setCustomValidity('Masukkan Nama Ayah')" oninput="this.setCustomValidity('')" />
+            <label class="form-label">Nama Ibu*</label>
+            <input type="text" class="form-control mb-3" name="ibu" required
+                oninvalid="this.setCustomValidity('Masukkan Nama Ibu')" oninput="this.setCustomValidity('')" />
+            <label class="form-label">Alamat*</label>
+            <input type="text" class="form-control mb-3" name="alamat" required
+                oninvalid="this.setCustomValidity('Masukkan Alamat')" oninput="this.setCustomValidity('')" />
+            <label class="form-label">No Telepon*</label>
+            <input type="number" class="form-control mb-3" name="telepon" required
+                oninvalid="this.setCustomValidity('Masukkan Nomor Telepon')" oninput="this.setCustomValidity('')" />
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert mt-4" role="alert">
+                <strong>Terimakasih!</strong> Data anda sudah kami terima, silahkan tunggu informasi lebih lanjut atau
+                hubungi <a href="https://wa.me/6287809190010" target="_blank">087809190010</a>
+                <span type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-kirim mt-2">Daftar</button>
+            <a href="../" class="btn btn-danger mt-2" tabindex="-1" role="button">Kembali</a>
+            <button class="btn btn-primary btn-loading d-none mt-2" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Tunggu sebentar...
+            </button>
+        </div>
+    </form>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

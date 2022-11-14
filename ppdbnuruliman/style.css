@@ -1,0 +1,64 @@
+*,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    background-color: #0D6EFD;
+}
+
+.header h1 {
+    font-weight: bold;
+    color: white;
+}
+
+.header p {
+    margin-top: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+form {
+    padding-bottom: 60px;
+    margin: 20px 20px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: -80px;
+    margin-bottom: 28px;
+}
+
+form,
+h1 {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#judul {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 50px;
+}
+
+.form p {
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.form {
+    margin: 30px 30px;
+}
+
+.form label {
+    font-weight: 500;
+}
+
+.form button {
+    float: right;
+}

@@ -1,0 +1,54 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner {
+    height: 100vh;
+    background: url('img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.ppdb:hover {
+    color: white;
+}
+
+.profile {
+    margin-top: -100px;
+}
+
+.card {
+    background-color: #0D6EFD;
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.pesan {
+    text-align: justify;
+}
+
+.visi {
+    background-color: #0D6EFD;
+}
+
+.teacher {
+    transition: transform .2s;
+}
+
+.teacher:hover {
+    transform: scale(1.1);
+}
