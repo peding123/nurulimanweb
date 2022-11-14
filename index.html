@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>RA Nurul Iman</title>
 </head>
 
 <body>
+    <div class="loader">
+        <img src="img/loading.gif" alt="">
+    </div>
     <!-- Navbar -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-primary shadow-lg">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-primary shadow-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">RA Nurul Iman</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -47,7 +51,7 @@
                 to
                 look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
                 content for equal-height.</p>
-            <a href="/ppdbnuruliman/index.html" class="btn btn-outline-primary" tabindex="-1" role="button"
+            <a href="/ppdbnuruliman/" class="btn btn-outline-primary" tabindex="-1" role="button"
                 aria-disabled="true">Daftar
                 sekarang!!!</a>
         </div>
@@ -58,7 +62,7 @@
     <div class="profile">
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center text-light profile">
-                <div class="card mx-2 mb-4 text-center rounded-5 shadow-lg" style="width: 18rem;">
+                <div class="card mx-2 mb-4 text-center rounded-5 shadow-lg intro" style="width: 18rem;">
                     <h2 class="fw-semibold pt-4">Hello World</h2>
                     <div class="card-body">
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
@@ -67,7 +71,7 @@
                         <a href="#" class="btn btn-outline-light">Go somewhere</a>
                     </div>
                 </div>
-                <div class="card mx-2 mb-4 text-center rounded-5 shadow-lg" style="width: 18rem;">
+                <div class="card mx-2 mb-4 text-center rounded-5 shadow-lg intro" style="width: 18rem;">
                     <h2 class="fw-semibold pt-4">Hello World</h2>
                     <div class="card-body">
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
@@ -76,7 +80,7 @@
                         <a href="#" class="btn btn-outline-light">Go somewhere</a>
                     </div>
                 </div>
-                <div class="card mx-2 mb-4 text-center rounded-5 shadow-lg" style="width: 18rem;">
+                <div class="card mx-2 mb-4 text-center rounded-5 shadow-lg intro" style="width: 18rem;">
                     <h2 class="fw-semibold pt-4">Hello World</h2>
                     <div class="card-body">
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
@@ -85,7 +89,7 @@
                         <a href="#" class="btn btn-outline-light">Go somewhere</a>
                     </div>
                 </div>
-                <div class="card mx-2 mb-4 text-center rounded-5 shadow-lg" style="width: 18rem;">
+                <div class="card mx-2 mb-4 text-center rounded-5 shadow-lg intro" style="width: 18rem;">
                     <h2 class="fw-semibold pt-4">Hello World</h2>
                     <div class="card-body">
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
@@ -142,40 +146,146 @@
             </div>
         </div>
     </div>
+    <h1 class="text-center fw-bold my-5">Guru Kami</h1>
     <!-- visi misi tujuan -->
 
     <!-- Guru -->
-    <div class="guru">
+
+
+    <div class="slide-container swiper">
         <div class="container">
-            <div class="row my-4">
-                <h1 class="text-center fw-bold mb-4">Guru Kami</h1>
-                <div class="col-sm teacher my-3">
-                    <img class="rounded-5 mx-auto d-block" src="/img/guru.jpg" width="80%">
-                    <p class="text-center my-2 fw-bold">Mohamad Ferdiansyah</p>
-                </div>
-                <div class="col-sm teacher my-3">
-                    <img class="rounded-5 mx-auto d-block" src="/img/guru.jpg" width="80%">
-                    <p class="text-center my-2 fw-bold">Mohamad Ferdiansyah</p>
-                </div>
-                <div class="col-sm teacher my-3">
-                    <img class="rounded-5 mx-auto d-block" src="/img/guru.jpg" width="80%">
-                    <p class="text-center my-2 fw-bold">Mohamad Ferdiansyah</p>
-                </div>
-                <div class="col-sm teacher my-3">
-                    <img class="rounded-5 mx-auto d-block" src="/img/guru.jpg" width="80%">
-                    <p class="text-center my-2 fw-bold">Mohamad Ferdiansyah</p>
-                </div>
-                <div class="col-sm teacher my-3">
-                    <img class="rounded-5 mx-auto d-block" src="/img/guru.jpg" width="80%">
-                    <p class="text-center my-2 fw-bold">Mohamad Ferdiansyah</p>
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper text-center text-light">
+                    <div class="card swiper-slide rounded-5 teacher">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/profile1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide rounded-5 teacher">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/profile2.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide rounded-5 teacher">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/profile3.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide rounded-5 teacher">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/profile4.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide rounded-5 teacher">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/profile5.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide rounded-5 teacher">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/profile6.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide rounded-5 teacher">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/profile7.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide rounded-5 teacher">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/profile8.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide rounded-5 teacher">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/profile9.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">David Dell</h2>
+                            <p class="description">The lorem text the section that contains header with having open
+                                functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
     </div>
     <!-- Guru -->
 
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
